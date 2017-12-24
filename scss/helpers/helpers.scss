@@ -1,0 +1,19 @@
+.fixed-header .header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  margin-top: 0;
+  top: 0;
+}
+.fixed-header .features {
+  box-shadow: 0 5px rgba(0, 0, 0, 0.1)
+}
+.fixed-aside {
+  position: fixed;
+  bottom: auto;
+  width: 137px;
+}
+.fixed-aside-bottom {
+  position: absolute;  
+  width: 137px;
+}

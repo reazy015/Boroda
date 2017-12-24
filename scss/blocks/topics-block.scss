@@ -1,0 +1,38 @@
+.topics {
+}
+.topics-item {
+  display: table-cell;
+  width: 50%;
+  padding: 5px 15px 58px 17px;
+  background-color: $basic-light-grey;
+  padding-right: 10px;
+  border-right: 10px solid $basic-white;
+  border-left: 10px solid $basic-white;
+  color: $basic-grey;
+  text-align: justify;
+
+  &:first-child {
+    border-left: none;
+  }
+  &:last-child {
+    border-right: none;
+  }
+}
+@media(max-width: 752px) {
+  .topics {
+    padding-right: 10px;
+  }
+  .topics-item {
+    display: block;
+    width: 100%;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 15px;
+    border-right: none;
+    border-left: none;
+    text-align: left;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

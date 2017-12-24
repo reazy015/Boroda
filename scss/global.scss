@@ -1,0 +1,23 @@
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+}
+.container {
+  max-width: 959px;
+  margin: auto;
+}
+.clearfix:after,
+.clearfix:before {
+  display: table;
+  content: '';
+}
+.clearfix:after {
+  clear: both;
+}
+@media (max-width: 950px) {
+  .container {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}

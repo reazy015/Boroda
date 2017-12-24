@@ -1,0 +1,43 @@
+.carousel {
+  position: relative;
+  overflow: hidden;
+  background-color: $basic-light-grey;
+  padding-top: 67px;
+  padding-bottom: 57px;
+  margin-bottom: 30px;
+  color: $basic-grey;
+}
+.carousel-wrap {
+  will-change: transform;
+  transition: transform .5s;
+  overflow: hidden;
+  position: relative;
+}
+.carousel__previous {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%) translateZ(0);
+  cursor: pointer;
+  z-index: 3;
+  background: transparent;
+  border: 10px solid transparent;
+  border-right: 12px solid $basic-grey;
+  border-radius: 5px;
+  outline: none;
+}
+.carousel__next {
+  @extend .carousel__previous;
+  left: auto;
+  right: 15px;
+  border: 10px solid transparent;
+  border-left: 12px solid $basic-grey;
+}
+.carousel__item {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
